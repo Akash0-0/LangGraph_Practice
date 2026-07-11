@@ -6,7 +6,7 @@ import os
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode
 from langchain_tavily import TavilySearch
-
+#just for commits
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
 
 tavily_api_key = os.getenv("TAVILY_API_KEY") or os.getenv("TVILY_API_KEY")
