@@ -8,7 +8,7 @@ from langgraph.prebuilt import ToolNode
 from langchain_tavily import TavilySearch
 #just for commits
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
-
+#for tool binding in iterative loo[ the state has to have a messages field
 tavily_api_key = os.getenv("TAVILY_API_KEY") or os.getenv("TVILY_API_KEY")
 if not tavily_api_key:
     raise RuntimeError("Missing Tavily API key. Set TAVILY_API_KEY or TVILY_API_KEY in your environment or .env file.")
